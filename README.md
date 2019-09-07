@@ -1,15 +1,48 @@
 # dashboard-material-nextjs-ts
 
-## Getting Started
+A minimal dashboard with taskbar and mini variant draw. The chart is courtesy of Recharts, but it is simple to substitute an alternative.
+
+## Tech Stack
+
+* [Nextjs](https://nextjs.org/)
+* [React](https://reactjs.org/)
+* [Material-UI](https://material-ui.com/)
+
+## Project Structure
+
+This branch has an express server that serves the dashboard data and the static web application once it's built.  The source for the entire application (Server/Client) is in the `./src` folder and is written to the `./build` folder during build.
+
+The project source is organized as follows:
+
+* `./pages` contains the required react app base files
+* `./pages/app` contains the react app dashboard code
+* `./pages/api` source for the api server
+* `./pages/structs` contains the shared data structures used by the client and server
+
+## Getting started
+
+Install dependencies
+
+```ssh
+> npm install
+```
+
+To run the application in development mode with live rebuild and reload
+
+```ssh
+> npm run dev
+```
 
 ## Bootstrapped
 
 The following steps were used to bootstrap the project
 
-1. npm init -y
-2. npm install --save react react-dom next lodash @material-ui/core @material-ui/icons recharts
-3. npm i -D typescript tslint tslint-react @types/lodash @types/react @types/react-dom @types/recharts @types/node
-4. mkdir pages
+```ssh
+> npm init -y
+> npm install --save react react-dom next lodash @material-ui/core @material-ui/icons recharts
+> npm i -D typescript tslint tslint-react @types/lodash @types/react @types/react-dom @types/recharts @types/node
+> mkdir pages
+```
 
 Then open the `package.json` file and replace scripts with the following:
 
@@ -25,8 +58,8 @@ Configuring tslint
 
 Initialize tslint config file
 
-```
-./node_modules/.bin/tslint --init
+```ssh
+> ./node_modules/.bin/tslint --init
 ```
 
 by replacing the extends block of tslint.json
