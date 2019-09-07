@@ -1,4 +1,5 @@
 import { ISale } from "../structs/sales";
+import { NextApiRequest, NextApiResponse } from "next";
 
 // Generate Sales Data
 function createData(time: string, amount: number | undefined): ISale {
@@ -17,7 +18,7 @@ const data = [
     createData("24:00", undefined),
 ];
 
-export default (req, res) => {
+export default (req: NextApiRequest, res: NextApiResponse) => {
     res.status(200).json(data);
   }
   

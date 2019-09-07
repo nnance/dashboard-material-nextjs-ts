@@ -1,4 +1,5 @@
 import { IOrder } from "../structs/orders";
+import { NextApiRequest, NextApiResponse } from "next";
 
 // Generate Order Data
 function createData(id: number, date: string, name: string, shipTo: string, method: string, amt: number): IOrder {
@@ -13,6 +14,6 @@ const data = [
   createData(4, "15 Mar, 2019", "Bruce Springsteen", "Long Branch, NJ", "VISA ⠀•••• 5919", 212.79),
 ];
 
-export default (req, res) => {
+export default (req: NextApiRequest, res: NextApiResponse) => {
   res.status(200).json(data)
 }
