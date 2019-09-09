@@ -1,7 +1,7 @@
 import React from "react";
 import { Label, Line, LineChart, ResponsiveContainer, XAxis, YAxis } from "recharts";
-import { ISale } from "../../structs/sales";
-import { getSales } from "../api";
+import { ISale } from "../../../lib/sales";
+import { getSales } from "../../../lib/api";
 import Title from "./Title";
 
 export default function Chart() {

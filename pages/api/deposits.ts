@@ -1,4 +1,4 @@
-import { IDeposits } from "../structs/deposits";
+import { IDeposits } from "../../lib/deposits";
 import { NextApiRequest, NextApiResponse } from "next";
 
 const deposits: IDeposits[] = [{

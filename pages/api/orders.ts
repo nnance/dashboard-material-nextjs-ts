@@ -1,4 +1,4 @@
-import { IOrder } from "../structs/orders";
+import { IOrder } from "../../lib/orders";
 import { NextApiRequest, NextApiResponse } from "next";
 
 // Generate Order Data

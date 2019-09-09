@@ -11,8 +11,8 @@ import {
   useTheme,
 } from "@material-ui/core";
 import React from "react";
-import { IOrder } from "../../structs/orders";
-import { getOrders } from "../api";
+import { IOrder } from "../../../lib/orders";
+import { getOrders } from "../../../lib/api";
 import Title from "./Title";
 
 const useStyles = makeStyles((theme) => ({

@@ -12,7 +12,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import clsx from "clsx";
 import React from "react";
-import { mainListItems, secondaryListItems } from "./listItems";
+import MenuList from "./MenuList";
 
 const drawerWidth = 240;
 
@@ -135,10 +135,7 @@ export default function TitleBar() {
             <ChevronLeftIcon />
           </IconButton>
         </div>
-        <Divider />
-        <List>{mainListItems}</List>
-        <Divider />
-        <List>{secondaryListItems}</List>
+        <MenuList />
       </Drawer>
     </React.Fragment>
   );

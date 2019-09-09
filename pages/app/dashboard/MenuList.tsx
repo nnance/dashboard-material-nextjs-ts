@@ -9,6 +9,7 @@ import LayersIcon from "@material-ui/icons/Layers";
 import PeopleIcon from "@material-ui/icons/People";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import React from "react";
+import { Divider, List } from "@material-ui/core";
 
 export const mainListItems = (
   <div>
@@ -68,3 +69,14 @@ export const secondaryListItems = (
     </ListItem>
   </div>
 );
+
+export default function MenuList() {
+  return (
+    <React.Fragment>
+      <Divider />
+      <List>{mainListItems}</List>
+      <Divider />
+      <List>{secondaryListItems}</List>
+    </React.Fragment>
+  )
+}

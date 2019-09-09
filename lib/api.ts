@@ -1,6 +1,6 @@
-import { decodeDeposits } from "../structs/deposits";
-import { IOrder } from "../structs/orders";
-import { ISale } from "../structs/sales";
+import { decodeDeposits } from "./deposits";
+import { IOrder } from "./orders";
+import { ISale } from "./sales";
 
 export function decode<T>(json: string) {
   return JSON.parse(json) as T;
