@@ -19,7 +19,7 @@
     "next": "^9.0.5",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "recharts": "^1.7.1"
+    "recharts": "^2.1.14"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.138",
